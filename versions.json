@@ -1,9 +1,14 @@
 [
   {
-    "version": "888",
-    "title": "888",
+    "version": "889",
+    "title": "889",
     "aliases": [
       "latest"
     ]
+  },
+  {
+    "version": "888",
+    "title": "888",
+    "aliases": []
   }
 ]
