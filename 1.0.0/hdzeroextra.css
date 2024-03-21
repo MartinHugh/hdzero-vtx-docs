@@ -25,3 +25,8 @@ td {
  th, td {
   border-color: #96D4D4;
 }
+
+table {
+  border-collapse: separate;
+  border-color: #green;
+}
