@@ -3,11 +3,11 @@
 }
 
 th {background-color: lightblue;}
-tr {background-color: lightgrey;}
+
 table, th, td {
   border: 1px solid;
 }
 table.no-zebra tbody tr:nth-child(even) td,
 table.no-zebra tbody tr.even td {
-  background: transparent;
+  background: green;
 }
