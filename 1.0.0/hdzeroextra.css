@@ -11,7 +11,7 @@ table.no-zebra tbody tr.even td {
   background: green;
 }
 */
-tr {background-color: lightgrey;}
+tr {background-color: darkgrey;}
 /*
 table {
   border-collapse: separate;
