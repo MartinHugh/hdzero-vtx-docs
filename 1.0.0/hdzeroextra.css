@@ -11,3 +11,4 @@ table.no-zebra tbody tr:nth-child(even) td,
 table.no-zebra tbody tr.even td {
   background: green;
 }
+td {background-color: lightgrey;}
