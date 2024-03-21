@@ -1,3 +1,11 @@
 .wy-nav-content {
     max-width: none;
 }
+tr.d0 td {
+  background-color: #CC9999;
+  color: black;
+}
+tr.d1 td {
+  background-color: #9999CC;
+  color: black;
+}
