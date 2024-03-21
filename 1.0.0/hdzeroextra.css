@@ -7,8 +7,15 @@ th {background-color: lightblue;}
 table, th, td {
   border: 1px solid;
 }
+
+/*
 table.no-zebra tbody tr:nth-child(even) td,
 table.no-zebra tbody tr.even td {
   background: green;
 }
-td {background-color: lightgrey;}
+*/
+tr {background-color: lightgrey;}
+
+table {
+  border-collapse: separate;
+}
