@@ -7,3 +7,6 @@ tr {background-color: lightgrey;}
 table, th, td {
   border: 1px solid;
 }
+table tr:nth-child(even) td {
+  background: lightgrey;
+}
