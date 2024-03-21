@@ -53,6 +53,38 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#summary">Summary</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#general-consideration-for-vtx-installation">General Consideration for VTX installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#caution-ufl-connectors-are-fragile">Caution: UFL Connectors Are Fragile</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#powering-the-vtx-bec-or-vbat">Powering the VTX: BEC or VBAT</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mounting-considerations">Mounting Considerations</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#targets">Targets</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#hdzero-whoop-video-transmitter-eol">HDZero Whoop video Transmitter (EOL)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#hdzero-whoop-lite-video-transmitter">HDZero Whoop Lite Video Transmitter</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#hdzero-race-v1-video-transmitter-eol">HDZero Race V1 Video Transmitter (EOL)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#hdzero-race-v2-video-transmitter-eol">HDZero Race V2 Video Transmitter (EOL)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#hdzero-race-v3-video-transmitter">HDZero Race V3 Video Transmitter</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#hdzero-freestyle-v1-video-transmittereol">HDZero Freestyle V1 Video Transmitter(EOL)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#hdzero-freestyle-v2-video-transmitter">HDZero Freestyle V2 Video Transmitter</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#hdzero-eco-video-video-transmitter">HDZero Eco Video Video Transmitter</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#vtx-sockets">VTX Sockets</a>
+    </li>
     </ul>
                 </li>
               </ul>
@@ -232,279 +264,6 @@
 </table>
 <p><strong>(a)</strong> With HAM Licence in some regions<BR>
 <strong>(b)</strong> 2nd batch or later</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: right;">VTX Name</th>
-<th style="text-align: center;">Size(mm)</th>
-<th style="text-align: center;">Mounting Pattern</th>
-<th style="text-align: right;">Weight</th>
-<th style="text-align: center;">Voltage Input</th>
-<th style="text-align: center;">Power</BR>Consumption</th>
-<th style="text-align: center;">RF Power Output</th>
-<th style="text-align: center;">Secured U.FL</th>
-<th style="text-align: center;">Antenna</th>
-<th style="text-align: center;">Tramp/SmartAudio</th>
-<th style="text-align: center;">Keypad</th>
-<th style="text-align: center;">Application</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: right;"><strong>Eco VTX</strong></td>
-<td style="text-align: center;">32x32</td>
-<td style="text-align: center;">25.5x25.5 M2(Soft)</td>
-<td style="text-align: right;">4.5g</td>
-<td style="text-align: center;">4V-12V</td>
-<td style="text-align: center;">5~6W</td>
-<td style="text-align: center;">25mW,200mW</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Dipole</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">TinyWhoop</td>
-</tr>
-<tr>
-<td style="text-align: right;"><strong>Freestyle V2</strong></td>
-<td style="text-align: center;">29x30</td>
-<td style="text-align: center;">20x20 M2</td>
-<td style="text-align: right;">22.3g</td>
-<td style="text-align: center;">7-25V</td>
-<td style="text-align: center;">6~15W</td>
-<td style="text-align: center;">25mW,200mW <br />(500mW,1W <strong><em>(a)</em></strong> )</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">RHCP</td>
-<td style="text-align: center;">SmartAudio</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Freestyle</td>
-</tr>
-<tr>
-<td style="text-align: right;"><strong>Freestyle V1 (EOL)</strong></td>
-<td style="text-align: center;">40x40</td>
-<td style="text-align: center;">30x30 M3(Soft)</td>
-<td style="text-align: right;">28.0g</td>
-<td style="text-align: center;">2S-6S <strong><em>(b)</em></strong></td>
-<td style="text-align: center;">6~15W</td>
-<td style="text-align: center;">25mW,200mW <br />(500mW,1W <strong><em>(a)</em></strong> )</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">RHCP</td>
-<td style="text-align: center;">SmartAudio</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Freestyle</td>
-</tr>
-<tr>
-<td style="text-align: right;"><strong>Race V3</strong></td>
-<td style="text-align: center;">28x32</td>
-<td style="text-align: center;">20x20 M4(Soft)</td>
-<td style="text-align: right;">5.5g</td>
-<td style="text-align: center;">4V-12V</td>
-<td style="text-align: center;">5~6W</td>
-<td style="text-align: center;">25mW,200mW</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">Tramp</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">Race</td>
-</tr>
-<tr>
-<td style="text-align: right;"><strong>Race V2(EOL)</strong></td>
-<td style="text-align: center;">34x34</td>
-<td style="text-align: center;">20x20 M4(Soft)</td>
-<td style="text-align: right;">6.0g</td>
-<td style="text-align: center;">7V-17V</td>
-<td style="text-align: center;">5~6W</td>
-<td style="text-align: center;">25mW,200mW</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">SmartAudio</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Race</td>
-</tr>
-<tr>
-<td style="text-align: right;"><strong>Race V1(EOL)</strong></td>
-<td style="text-align: center;">27x45</td>
-<td style="text-align: center;">20x20 M4(Soft)</td>
-<td style="text-align: right;">7.0g</td>
-<td style="text-align: center;">7V-17V</td>
-<td style="text-align: center;">5~6W</td>
-<td style="text-align: center;">25mW,200mW</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">SmartAudio</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Race</td>
-</tr>
-<tr>
-<td style="text-align: right;"><strong>Whoop Lite</strong></td>
-<td style="text-align: center;">32x32</td>
-<td style="text-align: center;">25.5x25.5 M2(Soft)</td>
-<td style="text-align: right;">4.5g</td>
-<td style="text-align: center;">1S-3S</td>
-<td style="text-align: center;">5~6W</td>
-<td style="text-align: center;">25mW,200mW</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">SmartAudio</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">TinyWhoop</td>
-</tr>
-<tr>
-<td style="text-align: right;"><strong>Whoop(EOL)</strong></td>
-<td style="text-align: center;">32x32</td>
-<td style="text-align: center;">25.5x25.5 M2</td>
-<td style="text-align: right;">5.3g</td>
-<td style="text-align: center;">7V-17V</td>
-<td style="text-align: center;">5~6W</td>
-<td style="text-align: center;">25mW,200mW</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Whoop</td>
-</tr>
-</tbody>
-</table>
-<p><strong>(a)</strong> With HAM Licence in some regions<BR>
-<strong>(b)</strong> 2nd batch or later</p>
-<h1 id="old">old</h1>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">VTX Name</th>
-<th style="text-align: center;">Whoop(EOL)</th>
-<th style="text-align: center;">Whoop Lite</th>
-<th style="text-align: center;">Race V1(EOL)</th>
-<th style="text-align: center;">Race V2(EOL)</th>
-<th style="text-align: center;">Race V3</th>
-<th style="text-align: center;">Freestyle V1 (EOL)</th>
-<th style="text-align: center;">Freestyle V2</th>
-<th style="text-align: center;">Eco VTX</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><strong>Dimension(mm x mm)</strong></td>
-<td style="text-align: center;">32x32</td>
-<td style="text-align: center;">32x32</td>
-<td style="text-align: center;">27x45</td>
-<td style="text-align: center;">34x34</td>
-<td style="text-align: center;">28x32</td>
-<td style="text-align: center;">40x40</td>
-<td style="text-align: center;">29x30</td>
-<td style="text-align: center;">32x32</td>
-</tr>
-<tr>
-<td style="text-align: center;"><strong>Mounting Pattern</strong></td>
-<td style="text-align: center;">25.5x25.5<br />M2</td>
-<td style="text-align: center;">25.5x25.5<br />M2 (Soft)</td>
-<td style="text-align: center;">20x20<br />M4(Soft)</td>
-<td style="text-align: center;">20x20<br />M4(Soft)</td>
-<td style="text-align: center;">20x20<br />M4(Soft)</td>
-<td style="text-align: center;">30x30<br />M3(Soft)</td>
-<td style="text-align: center;">20x20<br />M2</td>
-<td style="text-align: center;">25.5x25.5<br />M2 (Soft)</td>
-</tr>
-<tr>
-<td style="text-align: center;"><strong>Weight(grams)</strong></td>
-<td style="text-align: center;">5.3</td>
-<td style="text-align: center;">4.5</td>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">6</td>
-<td style="text-align: center;">5.5</td>
-<td style="text-align: center;">28</td>
-<td style="text-align: center;">22.3</td>
-<td style="text-align: center;">4.5</td>
-</tr>
-<tr>
-<td style="text-align: center;"><strong>Power Input</strong></td>
-<td style="text-align: center;">7V-17V</td>
-<td style="text-align: center;">1S-3S</td>
-<td style="text-align: center;">7V-17V</td>
-<td style="text-align: center;">7V-17V</td>
-<td style="text-align: center;">4V-12V</td>
-<td style="text-align: center;">2S-6S (2rd batch or later)</td>
-<td style="text-align: center;">7-25V</td>
-<td style="text-align: center;">4V-12V</td>
-</tr>
-<tr>
-<td style="text-align: center;"><strong>Power Consumption</strong></td>
-<td style="text-align: center;">5~6W</td>
-<td style="text-align: center;">5~6W</td>
-<td style="text-align: center;">5~6W</td>
-<td style="text-align: center;">5~6W</td>
-<td style="text-align: center;">5~6W</td>
-<td style="text-align: center;">6~15W</td>
-<td style="text-align: center;">6~15W</td>
-<td style="text-align: center;">5~6W</td>
-</tr>
-<tr>
-<td style="text-align: center;"><strong>RF Power Output</strong></td>
-<td style="text-align: center;">25mW,200mW</td>
-<td style="text-align: center;">25mW,200mW</td>
-<td style="text-align: center;">25mW,200mW</td>
-<td style="text-align: center;">25mW,200mW</td>
-<td style="text-align: center;">25mW,200mW</td>
-<td style="text-align: center;">25mW,200mW (500mW,<br />1W if with HAM license</td>
-<td style="text-align: center;">25mW,200mW (500mW,<br />1W if with HAM license</td>
-<td style="text-align: center;">25mW,200mW</td>
-</tr>
-<tr>
-<td style="text-align: center;"><strong>Secured U.FL</strong></td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Yes</td>
-</tr>
-<tr>
-<td style="text-align: center;"><strong>Antenna Included</strong></td>
-<td style="text-align: center;">Not included</td>
-<td style="text-align: center;">Not included</td>
-<td style="text-align: center;">Not included</td>
-<td style="text-align: center;">Not included</td>
-<td style="text-align: center;">Not included</td>
-<td style="text-align: center;">Polarized(RHCP)</td>
-<td style="text-align: center;">Polarized(RHCP)</td>
-<td style="text-align: center;">Dipole</td>
-</tr>
-<tr>
-<td style="text-align: center;"><strong>Tramp/SmartAudio</strong></td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">SmartAudio</td>
-<td style="text-align: center;">SmartAudio</td>
-<td style="text-align: center;">SmartAudio</td>
-<td style="text-align: center;">Tramp</td>
-<td style="text-align: center;">SmartAudio</td>
-<td style="text-align: center;">SmartAudio</td>
-<td style="text-align: center;">No</td>
-</tr>
-<tr>
-<td style="text-align: center;"><strong>Keypad</strong></td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Yes</td>
-</tr>
-<tr>
-<td style="text-align: center;"><strong>Application</strong></td>
-<td style="text-align: center;">Whoop</td>
-<td style="text-align: center;">TinyWhoop</td>
-<td style="text-align: center;">Race</td>
-<td style="text-align: center;">Race</td>
-<td style="text-align: center;">Race</td>
-<td style="text-align: center;">Freestyle</td>
-<td style="text-align: center;">Freestyle</td>
-<td style="text-align: center;">TinyWhoop</td>
-</tr>
-</tbody>
-</table>
 <h2 id="general-consideration-for-vtx-installation"><strong>General Consideration for VTX installation</strong></h2>
 <h3 id="caution-ufl-connectors-are-fragile"><strong>Caution: UFL Connectors Are Fragile</strong></h3>
 <p>All HDZero VTXes use an U.FL connector for its smaller footprint and lighter weight. However, it is not a mechanically strong connector. Treat it as if it’s made of glass. Here are notes for installing and uninstalling an antenna:</p>
