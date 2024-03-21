@@ -1,32 +1,5 @@
 .wy-nav-content {
     max-width: none;
 }
-/*
 th {background-color: lightblue;}
-*/
-
-/*
-table.no-zebra tbody tr:nth-child(even) td,
-table.no-zebra tbody tr.even td {
-  background: green;
-}
-*/
-tr {background-color: darkgrey;}
-/*
-table {
-  border-collapse: separate;
-}
-td {
-  border: 1px outset gray;
-}
-*/
-
-
- th, td {
-  border-color: #96D4D4;
-}
-
-table {
-  border-collapse: separate;
-  border-color: #green;
-}
+tr {background-color: lightgrey;}
